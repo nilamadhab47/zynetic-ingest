@@ -20,7 +20,7 @@ docker-compose up --build
 # App:     http://localhost:3000
 # Swagger: http://localhost:3000/api/docs
 ```
-### Railway-link - [http://localhost:3000/api/docs#/](https://zynetic-ingest-production.up.railway.app/api/docs)
+### Railway-link - [Zynetic-Ingest](https://zynetic-ingest-production.up.railway.app/api/docs)
 
 ### Local Development
 
