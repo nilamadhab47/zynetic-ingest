@@ -20,39 +20,7 @@ docker-compose up --build
 # App:     http://localhost:3000
 # Swagger: http://localhost:3000/api/docs
 ```
-
-### Deploy to Railway (Free)
-
-1. **Push code to GitHub** (public or private repo)
-
-2. **Create a Railway project** at [railway.app](https://railway.app)
-   - Sign in with GitHub
-   - Click **"New Project"**
-
-3. **Add PostgreSQL**
-   - Click **"+ New"** → **"Database"** → **"PostgreSQL"**
-   - Railway provisions it instantly
-
-4. **Add your app**
-   - Click **"+ New"** → **"GitHub Repo"** → select your repo
-   - Railway auto-detects the `Dockerfile` and builds it
-
-5. **Set environment variables** (in your app service → Variables tab)
-
-   | Variable | Value |
-   |----------|-------|
-   | `DATABASE_URL` | Click **"Add Reference"** → select the PostgreSQL service → `DATABASE_URL` (auto-filled) |
-   | `PORT` | `3000` |
-   | `NODE_ENV` | `production` |
-   | `PG_POOL_MAX` | `10` |
-
-6. **Deploy** — Railway builds and deploys automatically. Click **"Generate Domain"** in Settings to get a public URL.
-
-7. **Access Swagger** at `https://<your-domain>.railway.app/api/docs`
-
-> The app auto-runs `init.sql` on startup to create all tables, indexes, partitions, and seed data. No manual DB setup needed.
-
----
+### Railway-link - [http://localhost:3000/api/docs#/](https://zynetic-ingest-production.up.railway.app/api/docs)
 
 ### Local Development
 
